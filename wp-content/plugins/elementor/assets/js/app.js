@@ -3480,7 +3480,7 @@ function Tooltip(props) {
     // In case that the component is disabled the tipsy library will not be loaded by default.
     if (!props.disabled) {
       isAborted.current = false;
-      import( /* webpackIgnore: true */"".concat(elementorCommon.config.urls.assets, "lib/tipsy/tipsy.min.js?ver=1.0.0")).then(function () {
+      import( /* webpackIgnore: true */"".concat(elementorCommon.config.urls.assets, "lib/tipsy/tipsy.min.js")).then(function () {
         if (!isAborted.current) {
           if (isLibraryLoaded) {
             setTipsy();

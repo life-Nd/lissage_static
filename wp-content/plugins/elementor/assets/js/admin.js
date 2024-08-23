@@ -949,7 +949,7 @@ var ExperimentsModule = /*#__PURE__*/function (_elementorModules$Vie) {
       });
       this.experimentsDependency.bindEvents();
       if (this.elements.$experimentIndicators.length) {
-        import( /* webpackIgnore: true */"".concat(elementorCommon.config.urls.assets, "lib/tipsy/tipsy.min.js?ver=1.0.0")).then(function () {
+        import( /* webpackIgnore: true */"".concat(elementorCommon.config.urls.assets, "lib/tipsy/tipsy.min.js")).then(function () {
           return _this3.addIndicatorsTooltips();
         });
       }
